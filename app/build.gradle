@@ -29,9 +29,5 @@ dependencies {
     compile 'com.orhanobut:logger:1.11'
     compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
 
-    compile('com.mikepenz:materialdrawer:4.0.5@aar') {
-        transitive = true
-    }
-
     compile project(':youmeng')
 }
