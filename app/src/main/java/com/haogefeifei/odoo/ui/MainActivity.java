@@ -1,16 +1,28 @@
-package haogefeifei.com.odoo_mobile_building;
+package com.haogefeifei.odoo.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+import com.haogefeifei.odoo.R;
+import com.haogefeifei.odoo.ui.base.BaseActivity;
+import com.haogefeifei.odoo.utils.LogUtil;
+import com.mikepenz.materialdrawer.Drawer;
+
+
+public class MainActivity extends BaseActivity {
+
+    private static final String TAG = "MainActivity";
+
+    private Drawer result = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        LogUtil.d(TAG, "Hello!");
     }
 
     @Override

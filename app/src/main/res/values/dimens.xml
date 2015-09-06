@@ -2,4 +2,44 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_48dp">48dp</dimen>
+    <dimen name="margin_56dp">56dp</dimen>
+
+    <!-- Default widget elevation, per the Android Material Design guidelines. -->
+    <dimen name="detail_backdrop_height">256dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="list_item_avatar_size">40dp</dimen>
+    <dimen name="app_bar_elevation">4dp</dimen>
+    <dimen name="raised_button_elevation_resting">2dp</dimen>
+    <dimen name="raised_button_elevation_pressed">8dp</dimen>
+    <dimen name="fab_elevation_pressed">12dp</dimen>
+    <dimen name="fab_elevation_resting">6dp</dimen>
+    <dimen name="card_elevation_resting">2dp</dimen>
+    <dimen name="card_elevation_picked_up">8dp</dimen>
+    <dimen name="menus_elevation">8dp</dimen>
+    <dimen name="sub_menus_elevation">9dp</dimen>
+    <dimen name="dialogs_elevation">24dp</dimen>
+    <dimen name="nav_drawer_elevation">16dp</dimen>
+    <dimen name="bottom_sheet_elevation">16dp</dimen>
+    <dimen name="refresh_indicator_elevation">16dp</dimen>
+    <dimen name="search_bar_elevation_resting">2dp</dimen>
+    <dimen name="search_bar_elevation_scrolled">3dp</dimen>
+    <dimen name="snackbar_elevation">6dp</dimen>
+    <dimen name="switch_elevation">1dp</dimen>
+
+    <dimen name="about_header_height">230dp</dimen>
+    <dimen name="avatar_size">38dp</dimen>
+    <dimen name="open_source_lis_text_size">14sp</dimen>
+
+    <dimen name="fab_margin_right">0dp</dimen>
+    <dimen name="fab_margin_bottom">0dp</dimen>
+    <dimen name="tabsHeight">48dp</dimen>
 </resources>
