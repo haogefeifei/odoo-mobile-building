@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="partner_data">
+            <item>Agrolait</item>
+            <item>Agrolait, Michel Fletcher</item>
+            <item>Agrolait, Thomas Passot</item>
+            <item>Axelor</item>
+            <item>Axelor, Laith Jubair</item>
+            <item>Bank Wealthy and sons</item>
+            <item>Bank Wealthy and sons, Charlie Bernard</item>
+            <item>Bank Wealthy and sons, Jessica Dupont</item>
+            <item>Best Designers</item>
+            <item>Best Designers, Ayaan Agarwal</item>
+            <item>Camptocamp</item>
+            <item>Camptocamp, Luc Maurer</item>
+            <item>Chamber Works</item>
+            <item>Chamber Works, Angel Cook</item>
+            <item>Chamber Works, Robert Anderson</item>
+            <item>China Export</item>
+            <item>China Export, Chao Wang</item>
+            <item>China Export, Zhi Ch\'ang</item>
+            <item>Coin gourmand</item>
+            <item>Demo Portal User</item>
+            <item>Epic Technologies, David Simpson</item>
+            <item>Epic Technologies, John M. Brown</item>
+            <item>Federal</item>
+            <item>Global Solutions</item>
+            <item>Global Solutions, Kevin Clarke</item>
+            <item>Global Solutions, Morgan Rose</item>
+            <item>Global Solutions, Robin Smith</item>
+            <item>Luminous Technologies</item>
+            <item>Luminous Technologies, Laura Castro</item>
+            <item>Luminous Technologies, Sergio Pérez</item>
+            <item>Mediapole</item>
+            <item>Mediapole, Phillipp Miller</item>
+            <item>Millennium Industries</item>
+            <item>Millennium Industries, Jacob Taylor</item>
+            <item>Míng</item>
+            <item>Nebula Business</item>
+            <item>Nebula Business, Benjamin Flores</item>
+            <item>OpenCorp</item>
+            <item>Pizza Inn</item>
+            <item>The Jackson Group</item>
+            <item>The Jackson Group, Daniel Jackson</item>
+            <item>The Jackson Group, William Thomas</item>
+            <item>Think Big Systems</item>
+            <item>Think Big Systems, George Wilson</item>
+            <item>Think Big Systems, Lucas Jones</item>
+            <item>Vauxoo</item>
+            <item>Vauxoo, Nhomar Hernandez</item>
+            <item>Your Company, Chicago</item>
+            <item>Your Company, Chicago, Steven </item>
+            <item>YourCompany, Mark Davis</item>
+            <item>YourCompany, Roger Scott</item>
+        </string-array>
+</resources>

@@ -52,6 +52,10 @@
             android:name=".ui.AboutActivity"
             android:label="@string/title_activity_about" >
         </activity>
+        <activity
+            android:name=".ui.PartnerListActivity"
+            android:label="@string/title_activity_partner_list" >
+        </activity>
     </application>
 
 </manifest>

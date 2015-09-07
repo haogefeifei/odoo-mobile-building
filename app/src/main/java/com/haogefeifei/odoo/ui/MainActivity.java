@@ -57,8 +57,12 @@ public class MainActivity extends BaseActivity {
 
                 switch (menuItem.getItemId()) {
                     case R.id.nav_home:
+                        break;
                     case R.id.nav_messages:
+                        break;
                     case R.id.nav_partner:
+                        prepareIntent(PartnerListActivity.class);
+                        break;
                     case R.id.nav_setting:
                         break;
                     case R.id.nav_about:

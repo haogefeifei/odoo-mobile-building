@@ -19,6 +19,9 @@
     <string name="developer_description">一个逗B的程序员</string>
     <string name="open_source_lis">感谢开源</string>
     <string name="introduce_and_help">介绍与帮助</string>
-    <string name="open_source_libraries_list">com.orhanobut:logger:1.10</string>
+    <string name="open_source_libraries_list">com.orhanobut:logger:1.10\nLollipopContactsRecyclerViewFastScroller</string>
+
+    <!-- 客户 -->
+    <string name="title_activity_partner_list">客户</string>
 
 </resources>
