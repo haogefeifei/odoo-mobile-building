@@ -5,6 +5,7 @@
     <string name="action_settings">设置</string>
     <string name="settings">设置</string>
     <string name="action_about">关于</string>
+    <string name="exit_once_more">再点击一下退出</string>
     <string name="title_activity_welcome">WelcomeActivity</string>
 
     <!-- 关于 -->

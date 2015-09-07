@@ -10,7 +10,9 @@ import android.view.KeyEvent;
 import android.view.ViewConfiguration;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
+import com.haogefeifei.odoo.application.App;
 import com.haogefeifei.odoo.utils.LogOldUtil;
 import com.umeng.analytics.MobclickAgent;
 
@@ -113,5 +115,22 @@ public class BaseActivity extends AppCompatActivity {
             return true;
         }
         return false;
+    }
+
+    protected void showShort(String msg){
+
+        Toast.makeText(App.mContext, msg, Toast.LENGTH_SHORT).show();
+    }
+
+    protected void showShort(int resId) {
+        Toast.makeText(App.mContext, resId, Toast.LENGTH_SHORT).show();
+    }
+
+    protected void showLong(int resId) {
+        Toast.makeText(App.mContext, resId, Toast.LENGTH_LONG).show();
+    }
+
+    protected void showLong(String message) {
+        Toast.makeText(App.mContext, message, Toast.LENGTH_LONG).show();
     }
 }
