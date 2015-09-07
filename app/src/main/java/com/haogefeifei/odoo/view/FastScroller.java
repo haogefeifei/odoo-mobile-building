@@ -158,8 +158,8 @@ public class FastScroller extends LinearLayout {
         @Override
         public void onScrolled(RecyclerView rv, int dx, int dy) {
 
-            //Only react on scroll events when not done by moving the handle by touch
-            // prevents nervous jumping of the handle
+            //TODO 这里的计算然有bug
+
             if (handle.isSelected()) return;
 
             float itemCount = recyclerView.getAdapter().getItemCount();
