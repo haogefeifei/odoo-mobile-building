@@ -36,7 +36,7 @@
     <dimen name="switch_elevation">1dp</dimen>
 
     <dimen name="about_header_height">230dp</dimen>
-    <dimen name="avatar_size">38dp</dimen>
+    <dimen name="face_size">38dp</dimen>
     <dimen name="open_source_lis_text_size">14sp</dimen>
 
     <dimen name="fab_margin_right">0dp</dimen>

@@ -1,5 +1,6 @@
 package com.haogefeifei.odoo.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -60,6 +61,7 @@ public class MainActivity extends BaseActivity {
                     case R.id.nav_setting:
                         break;
                     case R.id.nav_about:
+                        prepareIntent(AboutActivity.class);
                         break;
                     default:
                         break;
@@ -69,6 +71,11 @@ public class MainActivity extends BaseActivity {
                 return true;
             }
         });
+    }
+
+    private boolean prepareIntent(Class clazz) {
+        startActivity(new Intent(MainActivity.this, clazz));
+        return true;
     }
 
     private void initView() {

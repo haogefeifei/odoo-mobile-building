@@ -4,10 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.ViewConfiguration;
@@ -24,11 +21,10 @@ import com.umeng.analytics.MobclickAgent;
 public class BaseActivity extends AppCompatActivity {
 
     private static final String TAG = "BaseActivity";
-    
-    
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -71,11 +67,11 @@ public class BaseActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-    protected void transparentBaseUI(){
+    protected void transparentBaseUI() {
 
         if (android.os.Build.VERSION.SDK_INT > 18) {
             Window window = getWindow();
-//            window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+
             window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION, WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
             //设置根布局的内边距
 //            RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.layout);

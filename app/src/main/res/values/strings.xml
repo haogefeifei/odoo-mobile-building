@@ -3,6 +3,21 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">设置</string>
+    <string name="settings">设置</string>
     <string name="action_about">关于</string>
     <string name="title_activity_welcome">WelcomeActivity</string>
+
+    <!-- 关于 -->
+    <string name="title_activity_about">关于</string>
+    <string name="about">关于</string>
+    <string name="introduce">「Odoo」- A suite of web based open source business apps。\n\n。。。</string>
+    <string name="share">分享</string>
+    <string name="share_text">Odoo - 移动客户端项目架子\nhttps://github.com/haogefeifei/odoo-mobile-building</string>
+    <string name="app_name_with_introduce">Odoo Mobile</string>
+    <string name="developers">关于我</string>
+    <string name="developer_description">一个逗B的程序员</string>
+    <string name="open_source_lis">感谢开源</string>
+    <string name="introduce_and_help">介绍与帮助</string>
+    <string name="open_source_libraries_list">com.orhanobut:logger:1.10</string>
+
 </resources>
