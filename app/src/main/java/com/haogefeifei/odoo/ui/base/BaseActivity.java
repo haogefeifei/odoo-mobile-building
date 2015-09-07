@@ -29,7 +29,6 @@ public class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        initBaseUI();
     }
 
     @Override
@@ -72,7 +71,7 @@ public class BaseActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-    private void initBaseUI(){
+    protected void transparentBaseUI(){
 
         if (android.os.Build.VERSION.SDK_INT > 18) {
             Window window = getWindow();
