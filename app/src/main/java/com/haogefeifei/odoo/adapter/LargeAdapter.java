@@ -26,7 +26,7 @@ public final class LargeAdapter extends RecyclerView.Adapter<LargeAdapter.ViewHo
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(android.R.layout.simple_list_item_1, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_partner, parent, false);
         return new ViewHolder(view);
     }
 
@@ -47,15 +47,15 @@ public final class LargeAdapter extends RecyclerView.Adapter<LargeAdapter.ViewHo
     }
 
     public static final class ViewHolder extends RecyclerView.ViewHolder {
-        private final TextView textView;
+        private final TextView txtPartnerName;
 
         private ViewHolder(View itemView) {
             super(itemView);
-            this.textView = (TextView) itemView.findViewById(android.R.id.text1);
+            this.txtPartnerName = (TextView) itemView.findViewById(R.id.txt_partner_name);
         }
 
         public void setText(CharSequence text) {
-            textView.setText(text);
+            txtPartnerName.setText(text);
         }
     }
 }

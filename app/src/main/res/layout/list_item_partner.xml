@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin_8dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/margin_8dp">
+
+    <com.haogefeifei.odoo.view.CircleImageView
+        android:id="@+id/img_head"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/user_logo" />
+
+    <TextView
+        android:id="@+id/txt_partner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_toRightOf="@+id/img_head"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/body_text_1"/>
+
+</RelativeLayout>
