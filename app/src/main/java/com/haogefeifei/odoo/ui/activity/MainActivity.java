@@ -1,4 +1,4 @@
-package com.haogefeifei.odoo.ui;
+package com.haogefeifei.odoo.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.haogefeifei.odoo.R;
-import com.haogefeifei.odoo.ui.base.BaseActivity;
+import com.haogefeifei.odoo.ui.activity.base.BaseActivity;
 
 
 public class MainActivity extends BaseActivity {
@@ -64,6 +64,7 @@ public class MainActivity extends BaseActivity {
                         prepareIntent(PartnerListActivity.class);
                         break;
                     case R.id.nav_setting:
+                        prepareIntent(SettingActivity.class);
                         break;
                     case R.id.nav_about:
                         prepareIntent(AboutActivity.class);

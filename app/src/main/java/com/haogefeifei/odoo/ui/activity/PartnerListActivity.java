@@ -1,4 +1,4 @@
-package com.haogefeifei.odoo.ui;
+package com.haogefeifei.odoo.ui.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
@@ -10,7 +10,7 @@ import android.view.MenuItem;
 
 import com.haogefeifei.odoo.R;
 import com.haogefeifei.odoo.adapter.LargeAdapter;
-import com.haogefeifei.odoo.ui.base.BaseActivity;
+import com.haogefeifei.odoo.ui.activity.base.BaseActivity;
 import com.haogefeifei.odoo.view.FastScroller;
 
 public class PartnerListActivity extends BaseActivity {

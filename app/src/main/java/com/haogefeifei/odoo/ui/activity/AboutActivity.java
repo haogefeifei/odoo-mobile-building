@@ -1,4 +1,4 @@
-package com.haogefeifei.odoo.ui;
+package com.haogefeifei.odoo.ui.activity;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.haogefeifei.odoo.R;
-import com.haogefeifei.odoo.ui.base.BaseActivity;
+import com.haogefeifei.odoo.ui.activity.base.BaseActivity;
 
 public class AboutActivity extends BaseActivity {
 

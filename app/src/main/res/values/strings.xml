@@ -22,6 +22,15 @@
     <string name="introduce_and_help">介绍与帮助</string>
     <string name="open_source_libraries_list">com.orhanobut:logger:1.10\nLollipopContactsRecyclerViewFastScroller</string>
 
+    <!-- 设置 -->
+    <string name="title_activity_setting">设置</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_version_code">版本</string>
+    <string name="auto_update">自动更新应用</string>
+    <string name="auto_notification">是否接受通知</string>
+    <string name="settings_general_settings">常规</string>
+    <string name="settings_notification_settings">通知</string>
+
     <!-- 客户 -->
     <string name="title_activity_partner_list">客户</string>
 

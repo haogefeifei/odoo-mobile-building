@@ -1,4 +1,4 @@
-package com.haogefeifei.odoo.ui.base;
+package com.haogefeifei.odoo.ui.activity.base;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
