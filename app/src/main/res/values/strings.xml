@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Odoo</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Hello Odoo!</string>
     <string name="action_settings">设置</string>
     <string name="menu_top_search_tips">搜索</string>
     <string name="settings">设置</string>
