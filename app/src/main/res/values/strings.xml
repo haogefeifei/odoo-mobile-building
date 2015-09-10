@@ -3,7 +3,6 @@
 
     <string name="hello_world">Hello Odoo!</string>
     <string name="action_settings">设置</string>
-    <string name="menu_top_search_tips">搜索</string>
     <string name="settings">设置</string>
     <string name="action_about">关于</string>
     <string name="exit_once_more">再点击一下退出</string>
@@ -33,5 +32,7 @@
 
     <!-- 客户 -->
     <string name="title_activity_partner_list">客户</string>
+    <string name="menu_top_search_tips">搜索</string>
+    <string name="menu_filter_tips">过滤</string>
 
 </resources>
