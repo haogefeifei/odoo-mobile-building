@@ -35,5 +35,7 @@
     <string name="menu_top_search_tips">搜索</string>
     <string name="menu_filter_tips">过滤</string>
     <string name="title_nev_filter">筛选</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="search_hint">输入关键字</string>
 
 </resources>

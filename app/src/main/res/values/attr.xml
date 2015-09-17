@@ -6,4 +6,6 @@
         <attr name="border_width" format="dimension" />
         <attr name="border_color2" format="color" />
     </declare-styleable>
+
+    <attr name="searchBarHeight" format="reference|dimension" />
 </resources>

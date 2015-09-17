@@ -1,5 +1,6 @@
 package com.haogefeifei.odoo.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -45,6 +46,9 @@ public class PartnerListActivity extends BaseActivity {
                 break;
             case R.id.action_filter:
                 mDrawerLayout.openDrawer(GravityCompat.END);
+                break;
+            case R.id.action_search:
+                startActivity(new Intent(PartnerListActivity.this, PartnerSearchActivity.class));
                 break;
             default:
                 break;
