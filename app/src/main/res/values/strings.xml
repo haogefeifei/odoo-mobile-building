@@ -8,6 +8,9 @@
     <string name="exit_once_more">再点击一下退出</string>
     <string name="title_activity_welcome">WelcomeActivity</string>
 
+    <!-- 介绍 -->
+    <string name="title_activity_intro_activity">介绍</string>
+
     <!-- 关于 -->
     <string name="title_activity_about">关于</string>
     <string name="about">关于</string>
@@ -19,7 +22,7 @@
     <string name="developer_description">一个逗B的程序员</string>
     <string name="open_source_lis">感谢开源</string>
     <string name="introduce_and_help">介绍与帮助</string>
-    <string name="open_source_libraries_list">com.orhanobut:logger:1.10\nLollipopContactsRecyclerViewFastScroller</string>
+    <string name="open_source_libraries_list">com.orhanobut:logger:1.10\nLollipopContactsRecyclerViewFastScroller\nPaoloRotolo/AppIntro</string>
 
     <!-- 设置 -->
     <string name="title_activity_setting">设置</string>

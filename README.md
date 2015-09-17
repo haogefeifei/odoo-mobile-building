@@ -7,6 +7,7 @@ Odoo客户端项目架子，集成XML-RPC、友盟、百度地图、扫描条码
 ## Thanks - 感谢
 
 - 感谢 [drakeet](https://github.com/drakeet) 的 [妹纸&gank.io](https://github.com/drakeet/Meizhi)， 提供的可爱的「关于」页面
+- [AppIntro](https://github.com/PaoloRotolo/AppIntro)
 
 ## License - 许可证
 

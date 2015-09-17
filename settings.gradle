@@ -1,1 +1,1 @@
-include ':app', ':youmeng'
+include ':app', ':youmeng', ':intro-library'
