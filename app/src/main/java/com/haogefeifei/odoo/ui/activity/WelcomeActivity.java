@@ -16,7 +16,7 @@ public class WelcomeActivity extends BaseActivity {
 
         MobclickAgent.updateOnlineConfig(this); //友盟统计
 
-        startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+        startActivity(new Intent(WelcomeActivity.this, IntroActivity.class));
         this.finish();
     }
 }

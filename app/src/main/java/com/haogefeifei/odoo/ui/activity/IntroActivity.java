@@ -3,6 +3,7 @@ package com.haogefeifei.odoo.ui.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.WindowManager;
 
 import com.github.paolorotolo.appintro.AppIntro;
 import com.haogefeifei.odoo.R;
@@ -38,7 +39,11 @@ public class IntroActivity extends AppIntro {
     }
 
     private void loadMainActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
+
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
+
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
         finish();
     }

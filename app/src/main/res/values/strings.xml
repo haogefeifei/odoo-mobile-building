@@ -11,6 +11,14 @@
     <!-- 介绍 -->
     <string name="title_activity_intro_activity">介绍</string>
 
+    <!-- 登录 -->
+    <string name="title_activity_login">登录</string>
+    <string name="edit_account">帐号</string>
+    <string name="edit_url">服务器地址</string>
+    <string name="edit_password">密码</string>
+    <string name="btn_login">登录</string>
+    <string name="txt_use_url">使用自己的服务器?</string>
+
     <!-- 关于 -->
     <string name="title_activity_about">关于</string>
     <string name="about">关于</string>
