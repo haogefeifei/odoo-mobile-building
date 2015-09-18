@@ -36,109 +36,99 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-// TODO: Auto-generated Javadoc
-
 /**
  * The Class Base64Helper.
  */
 public class Base64Helper {
 
-	/**
-	 * File uri to base64.
-	 * 
-	 * @param uri
-	 *            the uri
-	 * @param resolver
-	 *            the resolver
-	 * @return the string
-	 */
-	public static String fileUriToBase64(Uri uri, ContentResolver resolver) {
-		String encodedBase64 = "";
-		try {
-			byte[] bytes = readBytes(uri, resolver);
-			encodedBase64 = Base64.encodeToString(bytes, 0);
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-		return encodedBase64;
-	}
+    /**
+     * File uri to base64.
+     *
+     * @param uri      the uri
+     * @param resolver the resolver
+     * @return the string
+     */
+    public static String fileUriToBase64(Uri uri, ContentResolver resolver) {
+        String encodedBase64 = "";
+        try {
+            byte[] bytes = readBytes(uri, resolver);
+            encodedBase64 = Base64.encodeToString(bytes, 0);
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+        return encodedBase64;
+    }
 
-	/**
-	 * Read bytes.
-	 * 
-	 * @param uri
-	 *            the uri
-	 * @param resolver
-	 *            the resolver
-	 * @return the byte[]
-	 * @throws java.io.IOException
-	 *             Signals that an I/O exception has occurred.
-	 */
-	private static byte[] readBytes(Uri uri, ContentResolver resolver)
-			throws IOException {
-		// this dynamically extends to take the bytes you read
-		InputStream inputStream = resolver.openInputStream(uri);
-		ByteArrayOutputStream byteBuffer = new ByteArrayOutputStream();
+    /**
+     * Read bytes.
+     *
+     * @param uri      the uri
+     * @param resolver the resolver
+     * @return the byte[]
+     * @throws java.io.IOException Signals that an I/O exception has occurred.
+     */
+    private static byte[] readBytes(Uri uri, ContentResolver resolver)
+            throws IOException {
+        // this dynamically extends to take the bytes you read
+        InputStream inputStream = resolver.openInputStream(uri);
+        ByteArrayOutputStream byteBuffer = new ByteArrayOutputStream();
 
-		// this is storage overwritten on each iteration with bytes
-		int bufferSize = 1024;
-		byte[] buffer = new byte[bufferSize];
+        // this is storage overwritten on each iteration with bytes
+        int bufferSize = 1024;
+        byte[] buffer = new byte[bufferSize];
 
-		// we need to know how may bytes were read to write them to the
-		// byteBuffer
-		int len = 0;
-		while ((len = inputStream.read(buffer)) != -1) {
-			byteBuffer.write(buffer, 0, len);
-		}
+        // we need to know how may bytes were read to write them to the
+        // byteBuffer
+        int len = 0;
+        while ((len = inputStream.read(buffer)) != -1) {
+            byteBuffer.write(buffer, 0, len);
+        }
 
-		// and then we can return your byte array.
-		return byteBuffer.toByteArray();
-	}
+        // and then we can return your byte array.
+        return byteBuffer.toByteArray();
+    }
 
-	/**
-	 * Gets the bitmap image.
-	 * 
-	 * @param context
-	 *            the context
-	 * @param base64
-	 *            the base64
-	 * @return the bitmap image
-	 */
-	public static Bitmap getBitmapImage(Context context, String base64) {
+    /**
+     * Gets the bitmap image.
+     *
+     * @param context the context
+     * @param base64  the base64
+     * @return the bitmap image
+     */
+    public static Bitmap getBitmapImage(Context context, String base64) {
 
-		String imagestring = base64;
-		byte[] imageAsBytes = Base64.decode(imagestring.getBytes(), 5);
-		return BitmapFactory.decodeByteArray(imageAsBytes, 0,
-				imageAsBytes.length);
+        String imagestring = base64;
+        byte[] imageAsBytes = Base64.decode(imagestring.getBytes(), 5);
+        return BitmapFactory.decodeByteArray(imageAsBytes, 0,
+                imageAsBytes.length);
 
-	}
+    }
 
-	/**
-	 * Gets the rounded corner bitmap.
-	 * 
-	 * @param bitmap
-	 *            the bitmap
-	 * @return the rounded corner bitmap
-	 */
-	public static Bitmap getRoundedCornerBitmap(Bitmap bitmap) {
-		Bitmap output = Bitmap.createBitmap(bitmap.getWidth(),
-				bitmap.getHeight(), Config.ARGB_8888);
-		Canvas canvas = new Canvas(output);
+    /**
+     * Gets the rounded corner bitmap.
+     *
+     * @param bitmap the bitmap
+     * @return the rounded corner bitmap
+     */
+    public static Bitmap getRoundedCornerBitmap(Bitmap bitmap) {
+        Bitmap output = Bitmap.createBitmap(bitmap.getWidth(),
+                bitmap.getHeight(), Config.ARGB_8888);
+        Canvas canvas = new Canvas(output);
 
-		final int color = 0xff424242;
-		final Paint paint = new Paint();
-		final Rect rect = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());
-		final RectF rectF = new RectF(rect);
-		final float roundPx = 12;
+        final int color = 0xff424242;
+        final Paint paint = new Paint();
+        final Rect rect = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());
+        final RectF rectF = new RectF(rect);
+        final float roundPx = 12;
 
-		paint.setAntiAlias(true);
-		canvas.drawARGB(0, 0, 0, 0);
-		paint.setColor(color);
-		canvas.drawRoundRect(rectF, roundPx, roundPx, paint);
+        paint.setAntiAlias(true);
+        canvas.drawARGB(0, 0, 0, 0);
+        paint.setColor(color);
+        canvas.drawRoundRect(rectF, roundPx, roundPx, paint);
 
-		paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
-		canvas.drawBitmap(bitmap, rect, rect, paint);
+        paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
+        canvas.drawBitmap(bitmap, rect, rect, paint);
 
-		return output;
-	}
+        return output;
+    }
 }
