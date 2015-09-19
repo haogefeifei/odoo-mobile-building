@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import android.widget.LinearLayout;
 
 import com.haogefeifei.odoo.R;
-import com.haogefeifei.odoo.adapter.LargeAdapter;
+import com.haogefeifei.odoo.ui.adapter.LargeAdapter;
 import com.haogefeifei.odoo.ui.activity.base.BaseActivity;
 import com.haogefeifei.odoo.view.FastScroller;
 
