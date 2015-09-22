@@ -30,7 +30,7 @@
     <item
         android:id="@+id/nav_messages"
         android:icon="@mipmap/ic_event"
-        android:title="消息" />
+        android:title="日历" />
 
     <item android:title="其他">
         <menu>
