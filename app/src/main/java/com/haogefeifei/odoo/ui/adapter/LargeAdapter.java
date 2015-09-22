@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.haogefeifei.odoo.R;
 import com.haogefeifei.odoo.ui.view.BubbleTextGetter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public final class LargeAdapter extends RecyclerView.Adapter<LargeAdapter.ViewHolder> implements BubbleTextGetter {
@@ -21,7 +22,11 @@ public final class LargeAdapter extends RecyclerView.Adapter<LargeAdapter.ViewHo
     public LargeAdapter(Context context) {
 
         this.mContext = context;
-        this.items = java.util.Arrays.asList(mContext.getResources().getStringArray(R.array.partner_data));
+        this.items = new ArrayList<>();
+    }
+
+    public List<String> getItems() {
+        return items;
     }
 
     @Override

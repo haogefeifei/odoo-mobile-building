@@ -4,12 +4,6 @@
     tools:context="com.haogefeifei.odoo.ui.activity.PartnerListActivity">
 
     <item
-        android:id="@+id/action_filter"
-        android:icon="@drawable/ic_menu_filter"
-        android:title="@string/menu_filter_tips"
-        app:showAsAction="always" />
-
-    <item
         android:id="@+id/action_search"
         android:icon="@drawable/ic_menu_search"
         android:title="@string/menu_top_search_tips"

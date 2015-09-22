@@ -21,7 +21,7 @@ public class PartnerListActivity extends BaseActivity {
 
     public static final String TAG = "PartnerListActivity";
 
-    private DrawerLayout mDrawerLayout;
+    private LargeAdapter adapter ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +44,6 @@ public class PartnerListActivity extends BaseActivity {
             case android.R.id.home:
                 finish();
                 break;
-            case R.id.action_filter:
-                mDrawerLayout.openDrawer(GravityCompat.END);
-                break;
             case R.id.action_search:
                 startActivity(new Intent(PartnerListActivity.this, PartnerSearchActivity.class));
                 break;
@@ -65,22 +62,35 @@ public class PartnerListActivity extends BaseActivity {
         final ActionBar ab = getSupportActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-
-        LinearLayout navigationView = (LinearLayout) findViewById(R.id.nav_view);
-        if (navigationView != null) {
-            setupDrawerContent(navigationView);
-        }
-
-        RecyclerView recyclerView=(RecyclerView)findViewById(R.id.rv_partner_list);
-        recyclerView.setAdapter(new LargeAdapter(this));
+        final RecyclerView recyclerView=(RecyclerView)findViewById(R.id.rv_partner_list);
+        adapter = new LargeAdapter(this);
+        recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         FastScroller fastScroller=(FastScroller)findViewById(R.id.fast_scroller);
         fastScroller.setRecyclerView(recyclerView);
+
+        //test code
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                adapter.getItems().addAll(java.util.Arrays.asList(getResources().getStringArray(R.array.partner_data)));
+
+                PartnerListActivity.this.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        adapter.notifyDataSetChanged();
+                    }
+                });
+
+            }
+        }).start();
     }
 
-    private void setupDrawerContent(LinearLayout navigationView) {
-
-
-    }
 }
