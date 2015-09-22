@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
 
 import com.haogefeifei.odoo.db.DBContract.*;
-import com.haogefeifei.odoo.utils.LogOldUtil;
+import com.haogefeifei.odoo.common.utils.LogOldUtil;
 
 /**
  * 创建数据库

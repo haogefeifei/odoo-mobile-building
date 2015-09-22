@@ -1,12 +1,10 @@
-package com.haogefeifei.odoo.view;
+package com.haogefeifei.odoo.ui.view;
 
 import android.app.Activity;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.Display;
 import android.widget.RelativeLayout;
-
-import com.haogefeifei.odoo.utils.LogOldUtil;
 
 /**
  * @author junjun

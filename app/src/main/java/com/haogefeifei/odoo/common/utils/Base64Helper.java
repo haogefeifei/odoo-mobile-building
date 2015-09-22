@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http:www.gnu.org/licenses/>
  * 
  */
-package com.haogefeifei.odoo.utils;
+package com.haogefeifei.odoo.common.utils;
 
 import android.content.ContentResolver;
 import android.content.Context;

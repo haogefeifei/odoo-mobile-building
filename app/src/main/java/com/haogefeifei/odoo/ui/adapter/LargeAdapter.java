@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.haogefeifei.odoo.R;
-import com.haogefeifei.odoo.view.BubbleTextGetter;
+import com.haogefeifei.odoo.ui.view.BubbleTextGetter;
 
 import java.util.List;
 

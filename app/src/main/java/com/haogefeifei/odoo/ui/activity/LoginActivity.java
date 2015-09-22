@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.haogefeifei.odoo.R;
 import com.haogefeifei.odoo.ui.activity.base.BaseActivity;
-import com.haogefeifei.odoo.view.InputMethodRelativeLayout;
+import com.haogefeifei.odoo.ui.view.InputMethodRelativeLayout;
 
 /**
  * 登录页面

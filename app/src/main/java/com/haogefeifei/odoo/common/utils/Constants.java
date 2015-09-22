@@ -1,4 +1,4 @@
-package com.haogefeifei.odoo.utils;
+package com.haogefeifei.odoo.common.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;

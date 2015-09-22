@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import com.haogefeifei.odoo.R;
 import com.haogefeifei.odoo.ui.adapter.LargeAdapter;
 import com.haogefeifei.odoo.ui.activity.base.BaseActivity;
-import com.haogefeifei.odoo.view.FastScroller;
+import com.haogefeifei.odoo.ui.view.FastScroller;
 
 public class PartnerListActivity extends BaseActivity {
 

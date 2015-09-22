@@ -13,7 +13,7 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.haogefeifei.odoo.application.App;
-import com.haogefeifei.odoo.utils.LogOldUtil;
+import com.haogefeifei.odoo.common.utils.LogOldUtil;
 import com.umeng.analytics.MobclickAgent;
 
 /**

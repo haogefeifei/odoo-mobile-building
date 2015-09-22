@@ -1,4 +1,4 @@
-package com.haogefeifei.odoo.view;
+package com.haogefeifei.odoo.ui.view;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
