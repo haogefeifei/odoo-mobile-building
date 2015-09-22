@@ -2,10 +2,10 @@
 <resources>
     <attr name="themedTextColorPrimaryInverse" format="reference" />
     <attr name="contentTextSize" format="dimension|reference" />
+    <attr name="searchBarHeight" format="reference|dimension" />
+
     <declare-styleable name="CircleImageView">
         <attr name="border_width" format="dimension" />
         <attr name="border_color2" format="color" />
     </declare-styleable>
-
-    <attr name="searchBarHeight" format="reference|dimension" />
 </resources>

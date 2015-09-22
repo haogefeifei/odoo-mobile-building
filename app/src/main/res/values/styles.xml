@@ -17,8 +17,16 @@
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
 
+    <style name="TextAppearance.App.ToolBar.Title" parent="@style/TextAppearance.App.Large">
+        <item name="android:textColor">@color/md_white_1000</item>
+    </style>
+
     <style name="TextAppearance.App.Large" parent="@style/TextAppearance.App">
         <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="TextAppearance.App.XLarge" parent="@style/TextAppearance.App">
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
     </style>
 
     <style name="Prefs" parent="AppTheme">
