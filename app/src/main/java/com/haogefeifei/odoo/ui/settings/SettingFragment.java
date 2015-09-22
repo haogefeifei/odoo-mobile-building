@@ -1,4 +1,4 @@
-package com.haogefeifei.odoo.ui.fragment;
+package com.haogefeifei.odoo.ui.settings;
 
 import android.os.Bundle;
 import android.preference.Preference;
@@ -7,7 +7,7 @@ import android.preference.PreferenceFragment;
 import com.haogefeifei.odoo.R;
 
 
-public class PrefsFragment extends PreferenceFragment
+public class SettingFragment extends PreferenceFragment
         implements Preference.OnPreferenceClickListener {
 
 

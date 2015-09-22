@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.haogefeifei.odoo.R;
 import com.haogefeifei.odoo.ui.activity.base.ToolbarActivity;
-import com.haogefeifei.odoo.ui.fragment.PrefsFragment;
+import com.haogefeifei.odoo.ui.settings.SettingFragment;
 
 public class SettingActivity extends ToolbarActivity {
 
@@ -27,7 +27,7 @@ public class SettingActivity extends ToolbarActivity {
         setTitle(getString(R.string.title_activity_setting));
         getFragmentManager()
                 .beginTransaction()
-                .replace(R.id.fragment_frame, new PrefsFragment())
+                .replace(R.id.fragment_frame, new SettingFragment())
                 .commit();
     }
 }
