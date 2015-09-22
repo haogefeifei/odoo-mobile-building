@@ -17,14 +17,14 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String TAG = "DBHelper";
 
     private static final String DATABASE_NAME = "odoo.db";
-    private static final int CUR_DATABASE_VERSION = 1;
+    private static final int CUR_DATABASE_VERSION = 3;
 
     private final Context mContext;
 
     /**
      * 数据库表
      */
-    interface Tables {
+    public interface Tables {
 
         String VERSION = "version"; //数据更新时间
         String PARTNER = "partner"; //客户
@@ -48,7 +48,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 + VersionColumns.VERSION_VALUE + " TEXT NOT NULL)");
 
         db.execSQL("INSERT INTO " + Tables.VERSION
-                + " VALUES(null, ?, ?)", new Object[]{"1979-01-01 01:00:00", "update_time"});
+                + " VALUES(null, ?, ?)", new Object[]{"update_time", "1979-01-01 01:00:00"});
 
         db.execSQL("CREATE TABLE " + Tables.PARTNER + " ("
                 + BaseColumns._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -80,5 +80,8 @@ public class DBHelper extends SQLiteOpenHelper {
 
         db.execSQL("DROP TABLE IF EXISTS " + Tables.VERSION);
         db.execSQL("DROP TABLE IF EXISTS " + Tables.PARTNER);
+
+        //调用方法执行创建
+        onCreate(db);
     }
 }

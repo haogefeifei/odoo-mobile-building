@@ -8,7 +8,7 @@ public class DBContract {
     /**
      * 版本管理表字段
      */
-    interface VersionColumns {
+    public interface VersionColumns {
 
         String VERSION_VALUE = "version_value";
         String VERSION_KEY = "version_key";
@@ -17,7 +17,7 @@ public class DBContract {
     /**
      * 客户表字段
      */
-    interface PartnerColumns {
+    public interface PartnerColumns {
 
         String PARTNER_ID = "partner_id";                   //id
         String PARTNER_TYPE = "partner_type";               //类型
