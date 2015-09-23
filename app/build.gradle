@@ -28,6 +28,7 @@ dependencies {
     compile 'com.android.support:design:23.+'
     compile 'com.orhanobut:logger:1.11'
     compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.github.alamkanak:android-week-view:1.2.3'
     compile project(':youmeng')
     compile project(':intro-library')
     compile project(':baidumap')

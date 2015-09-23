@@ -31,7 +31,7 @@
     <string name="developer_description">一个逗B的程序员</string>
     <string name="open_source_lis">感谢开源</string>
     <string name="introduce_and_help">介绍与帮助</string>
-    <string name="open_source_libraries_list">com.orhanobut:logger:1.10\nLollipopContactsRecyclerViewFastScroller\nPaoloRotolo/AppIntro</string>
+    <string name="open_source_libraries_list">com.orhanobut:logger:1.10\nLollipopContactsRecyclerViewFastScroller\nPaoloRotolo/AppIntro\nAndroid-Week-View</string>
 
     <!-- 设置 -->
     <string name="title_activity_setting">设置</string>
@@ -49,5 +49,8 @@
     <string name="title_nev_filter">筛选</string>
     <string name="title_activity_search">SearchActivity</string>
     <string name="search_hint">输入关键字</string>
+
+    <!-- 日历 -->
+    <string name="title_activity_calendar">日历</string>
 
 </resources>

@@ -28,7 +28,7 @@
         android:icon="@mipmap/ic_perm_contact"
         android:title="客户" />
     <item
-        android:id="@+id/nav_messages"
+        android:id="@+id/nav_calendar"
         android:icon="@mipmap/ic_event"
         android:title="日历" />
 

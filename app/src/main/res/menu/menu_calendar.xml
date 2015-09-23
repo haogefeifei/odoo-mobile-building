@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.haogefeifei.odoo.ui.activity.SettingActivity">
+
+    <item
+        android:id="@+id/action_today"
+        android:orderInCategory="100"
+        android:title="今天"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_day_view"
+        android:orderInCategory="100"
+        android:title="DAY VIEW"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_three_day_view"
+        android:checked="true"
+        android:orderInCategory="100"
+        android:title="3 day view"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_week_view"
+        android:orderInCategory="100"
+        android:title="Week view"
+        app:showAsAction="never" />
+</menu>
