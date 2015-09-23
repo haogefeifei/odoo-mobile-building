@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.widget.Toolbar;
 import android.support.v7.app.ActionBar;
+import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import com.haogefeifei.odoo.R;
 import com.haogefeifei.odoo.ui.activity.base.BaseActivity;
@@ -20,6 +22,7 @@ public class MainActivity extends BaseActivity {
     private static final String TAG = "MainActivity";
 
     private DrawerLayout mDrawerLayout;
+    private LinearLayout linHead;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,5 +125,14 @@ public class MainActivity extends BaseActivity {
         if (navigationView != null) {
             setupDrawerContent(navigationView);
         }
+
+        linHead = (LinearLayout)findViewById(R.id.lin_head_title);
+        linHead.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                mDrawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
     }
 }
