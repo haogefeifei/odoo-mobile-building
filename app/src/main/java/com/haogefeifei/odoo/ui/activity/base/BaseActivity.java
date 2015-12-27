@@ -119,18 +119,18 @@ public class BaseActivity extends AppCompatActivity {
 
     protected void showShort(String msg){
 
-        Toast.makeText(App.mContext, msg, Toast.LENGTH_SHORT).show();
+        Toast.makeText(App.getInstance(), msg, Toast.LENGTH_SHORT).show();
     }
 
     protected void showShort(int resId) {
-        Toast.makeText(App.mContext, resId, Toast.LENGTH_SHORT).show();
+        Toast.makeText(App.getInstance(), resId, Toast.LENGTH_SHORT).show();
     }
 
     protected void showLong(int resId) {
-        Toast.makeText(App.mContext, resId, Toast.LENGTH_LONG).show();
+        Toast.makeText(App.getInstance(), resId, Toast.LENGTH_LONG).show();
     }
 
     protected void showLong(String message) {
-        Toast.makeText(App.mContext, message, Toast.LENGTH_LONG).show();
+        Toast.makeText(App.getInstance(), message, Toast.LENGTH_LONG).show();
     }
 }

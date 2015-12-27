@@ -5,12 +5,17 @@ import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.haogefeifei.odoo.R;
+import com.haogefeifei.odoo.api.inf.OdooRpcException;
+import com.haogefeifei.odoo.common.utils.LogUtil;
+import com.haogefeifei.odoo.service.UserServiceImpl;
+import com.haogefeifei.odoo.service.inf.UserServiceInf;
 import com.haogefeifei.odoo.ui.activity.base.BaseActivity;
 import com.haogefeifei.odoo.ui.view.InputMethodRelativeLayout;
 
@@ -30,13 +35,20 @@ public class LoginActivity extends BaseActivity implements InputMethodRelativeLa
     private TextInputLayout layoutInputUrl;
     private InputMethodRelativeLayout layoutLoginPage;
 
+    private UserServiceInf userService ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
         transparentBaseUI(); //透明虚拟按键
+        initClass();
         setupView();
+    }
+
+    private void initClass(){
+        userService = new UserServiceImpl();
     }
 
     private void setupView() {
@@ -61,6 +73,26 @@ public class LoginActivity extends BaseActivity implements InputMethodRelativeLa
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                final String account = edtAccount.getText().toString();
+                final String password = edtPassWord.getText().toString();
+
+                // Test!
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        int id = 0;
+                        try {
+                            id = userService.Login(account, password);
+                        } catch (OdooRpcException e) {
+                            e.printStackTrace();
+                            LogUtil.d(TAG, "--->登录错误！" + e.getExceptionMessage());
+                        }
+
+                        Log.d(TAG, "--->登录UID:" + id);
+                    }
+                }).start();
 
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 LoginActivity.this.finish();
