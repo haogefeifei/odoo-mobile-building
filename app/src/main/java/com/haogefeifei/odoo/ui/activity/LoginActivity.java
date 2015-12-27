@@ -91,6 +91,7 @@ public class LoginActivity extends BaseActivity implements InputMethodRelativeLa
                         }
 
                         Log.d(TAG, "--->登录UID:" + id);
+
                     }
                 }).start();
 
